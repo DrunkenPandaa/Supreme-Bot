@@ -7,8 +7,9 @@ bot.login(process.env.token);
 
 const PREFIX = '+';
 
-bot.on('ready', () =>{
-    console.log('Online!')
+bot.on('ready', async () =>{
+    console.log('Logged in!');
+    bot.user.setActivity('Supreme Leading');
 
 })
 
