@@ -62,7 +62,7 @@ bot.on('message', message=>{
 
             case 'test':
 
-                const Infotext = new Discord.RichEmbed()
+                const test = new Discord.RichEmbed()
                 .setTitle('Infotext')
                 .setDescription('This is a test description');
 
