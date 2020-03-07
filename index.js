@@ -65,11 +65,10 @@ bot.on('message', message=>{
                 .setAuthor('Supreme')
                 .setDescription('[Click here to join the roleplay!](https://discord.gg/dGc2KVy)')
                 .setThumbnail('https://images-ext-2.discordapp.net/external/nqIQSbJGTxkf3cAR7FRLI4gBUry5XbEgPo1KWJoSYIw/%3Fsize%3D2048/https/cdn.discordapp.com/avatars/224104604546236417/db80160021b878780a7c70acbadfd1bd.png?width=678&height=678')
-                .addField('Field 1')
-                .addField('Field 2')
+                .addField('Field 1', true)
+                .addField('Field 2', true)
                 .addBlankField()
-                .setFooter('ROLEPLAY');
-
+                .setFooter('ROLEPLAY')
                 message.channel.sendEmbed(roleplay);
 
             break;
