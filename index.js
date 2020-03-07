@@ -46,10 +46,10 @@ bot.on('message', message=>{
                 .setTitle('User Information')
                 .addField('Username + #', message.member.user.tag, true)
                 .addField('Bot?', message.member.user.bot, true)
-                .addField('2FA enabled?', message.member.user.mfaEnabled, true)
                 .addField('Verified?', message.member.user.verified, true)
                 .addField('Created At', message.member.user.createdAt,true)
                 .addField('Mention', message.member, true)
+                .addField('Date', message.member.user.Date, true)
                 .addField('Joined At', message.member.joinedAt, true)
                 .addField('Current Server', message.guild.name, true)
                 .addField('Discord Univeral ID', message.member.user.id, true)
@@ -64,6 +64,7 @@ bot.on('message', message=>{
                 const test = new Discord.RichEmbed()
                 .setTitle('Infotext')
                 .setDescription('This is a test description');
+                message.channel.sendEmbed(test);
 
             break;
 
