@@ -63,7 +63,7 @@ bot.on('message', message=>{
 
                 const test = new Discord.RichEmbed()
                 .setTitle('Infotext')
-                .setDescription('This is a test description');
+                .setDescription('[This is a test description](https://example.com)');
                 message.channel.sendEmbed(test);
 
             break;
