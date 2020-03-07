@@ -45,7 +45,7 @@ bot.on('message', message=>{
                 const myinfo = new Discord.RichEmbed()
                 .setTitle('User Information')
                 .addField('Username + #', message.member.user.tag, true)
-                .addField('Bot?', message.client.user.bot, true)
+                .addField('Bot?', message.client.user.bot)
                 .addField('2FA enabled?', message.client.user.mfaEnabled, true)
                 .addField('Presence', message.client.user.presence, true)
                 .addField('Verified?', message.client.user.verified, true)
