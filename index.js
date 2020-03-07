@@ -37,7 +37,7 @@ bot.on('message', message=>{
             if(!args[1]) return message.reply('yo wtf!! define second arg')
             message.channel.bulkDelete(args[1]);
                     message.channel.sendMessage('Deleted a few messages for you!')
-            message.channel.bulkDelete(args[1]);
+            message.channel.bulkDelete(args[0]);
             break;
 
             case 'myinfo':
