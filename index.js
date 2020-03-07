@@ -37,23 +37,25 @@ bot.on('message', message=>{
             if(!args[1]) return message.reply('yo wtf!! define second arg')
             message.channel.bulkDelete(args[1]);
                     message.channel.sendMessage('Deleted a few messages for you!')
+            message.channel.bulkDelete(args[1]);
             break;
 
-            case 'embed':
+            case 'myinfo':
 
-                const embed = new Discord.RichEmbed()
+                const myinfo = new Discord.RichEmbed()
                 .setTitle('User Information')
                 .addField('Username + #', message.member.user.tag, true)
-                .addField('Account Age', message.member.user.createdAt,true)
+                .addField('Created At', message.member.user.createdAt,true)
+                .addField('Account Age', message.member) // not finished
                 .addField('Current Server', message.guild.name, true)
                 .addField('Discord Univeral ID', message.member.user.id, true)
                 .setThumbnail(message.author.avatarURL)
                 .setFooter('Chatters District :mad:')
                 .setColor(0xF1C40F)
-                message.channel.sendEmbed(embed);
+                message.channel.sendEmbed(myinfo);
             break;
 
-            case 'myinfo':
+            case 'test':
                 message.channel.sendMessage('My Info test')
         }
 });
