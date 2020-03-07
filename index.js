@@ -68,5 +68,13 @@ bot.on('message', message=>{
 
             break;
 
+            function getToday(){
+                let today = new Date();
+                let months = [`January`,`February`,`March`,`April`,`May`,`June`,`July`,`August`,`September`,`October`,`November`,`December`];
+                let suffix = ['st', 'nd', 'rd'];
+                return `${today.getDate()}${suffix[today.getDate()] || `th`} of ${months[today.getMonth()]}`;
+            }
+            console.log(getToday());
+
         }
 });
