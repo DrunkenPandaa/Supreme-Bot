@@ -47,6 +47,7 @@ bot.on('message', message=>{
                 .addField('Username + #', message.member.user.tag, true)
                 .addField('Mention', message.member, true)
                 .addField('Bot?', message.member.user.bot, true)
+                .addField('Status', message.member.user.presence.status, true)
                 .addField('Created At', message.member.user.createdAt,true)
                 .addField('Joined At', message.member.joinedAt, true)
                 .addField('Joined At2', moment(message.guild.member.get(user.id).joinedAt).format("MMMM Do YYYY, h:mm a"))
