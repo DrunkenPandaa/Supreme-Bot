@@ -47,7 +47,6 @@ bot.on('message', message=>{
                 .addField('Username + #', message.member.user.tag, true)
                 .addField('Bot?', message.member.user.bot, true)
                 .addField('2FA enabled?', message.member.user.mfaEnabled, true)
-                .addField('Presence', message.member.user.presence, true)
                 .addField('Verified?', message.member.user.verified, true)
                 .addField('Created At', message.member.user.createdAt,true)
                 .addField('Mention', message.member, true)
