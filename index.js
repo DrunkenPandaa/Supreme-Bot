@@ -46,10 +46,8 @@ bot.on('message', message=>{
                 .setTitle('User Information')
                 .addField('Username + #', message.member.user.tag, true)
                 .addField('Bot?', message.member.user.bot, true)
-                .addField('Verified?', message.member.user.verified, true)
                 .addField('Created At', message.member.user.createdAt,true)
                 .addField('Mention', message.member, true)
-                .addField('Date', message.member.user.Date, true)
                 .addField('Joined At', message.member.joinedAt, true)
                 .addField('Current Server', message.guild.name, true)
                 .addField('Discord Univeral ID', message.member.user.id, true)
@@ -68,14 +66,6 @@ bot.on('message', message=>{
 
             break;
 
-            case 'getToday'
-            const getToday(){
-                let today = new Date();
-                let months = [`January`,`February`,`March`,`April`,`May`,`June`,`July`,`August`,`September`,`October`,`November`,`December`];
-                let suffix = ['st', 'nd', 'rd'];
-                return `${today.getDate()}${suffix[today.getDate()] || `th`} of ${months[today.getMonth()]}`;
-
-            }
-
+            
         }
 });
