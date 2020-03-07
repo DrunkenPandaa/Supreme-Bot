@@ -9,7 +9,7 @@ const PREFIX = '+';
 
 bot.on('ready', async () =>{
     console.log('Logged in!');
-    bot.user.setActivity('Supreme Leading');
+    bot.user.setActivity('Supreme Leading', { type: 'WATCHING'}).catch(console.error);
 
 })
 
