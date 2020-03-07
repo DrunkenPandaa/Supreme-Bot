@@ -43,7 +43,7 @@ bot.on('message', message=>{
             case 'myinfo':
 
                 const myinfo = new Discord.RichEmbed()
-                .setTitle('Userinformation')
+                .setTitle('User Information')
                 .addField('Username + #', message.member.user.tag, true)
                 .addField('Mention', message.member, true)
                 .addField('Bot?', message.member.user.bot, true)
