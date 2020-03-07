@@ -43,13 +43,12 @@ bot.on('message', message=>{
             case 'myinfo':
 
                 const myinfo = new Discord.RichEmbed()
-                .setTitle('User:', message.member.user.tag, true)
+                .setTitle('Userinformation')
                 .addField('Username + #', message.member.user.tag, true)
                 .addField('Mention', message.member, true)
                 .addField('Bot?', message.member.user.bot, true)
-                .addField('Status', message.member.user.presence.status, true)
                 .addField('Created At', message.member.user.createdAt,true)
-                .addField('Joined At2', moment(message.guild.member.get(user.id).joinedAt).format("MMMM Do YYYY, h:mm a"))
+                .addField('Joined At', message.member.joinedAt, true)
                 .addField('Current Server', message.guild.name, true)
                 .addField('Discord Univeral ID', message.member.user.id, true)
                 .setThumbnail(message.author.avatarURL)
