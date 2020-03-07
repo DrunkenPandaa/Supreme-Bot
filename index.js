@@ -45,8 +45,13 @@ bot.on('message', message=>{
                 const myinfo = new Discord.RichEmbed()
                 .setTitle('User Information')
                 .addField('Username + #', message.member.user.tag, true)
+                .addField('Bot?', message.client.user.bot, true)
+                .addField('2FA enabled?', message.client.user.mfaEnabled, true)
+                .addField('Presence', message.client.user.presence, true)
+                .addField('Verified?', message.client.user.verified, true)
                 .addField('Created At', message.member.user.createdAt,true)
-                .addField('Account Age', message.member) // not finished
+                .addField('Mention', message.member)
+                .addField('Account Age', message.member.user.crea) // not finished
                 .addField('Current Server', message.guild.name, true)
                 .addField('Discord Univeral ID', message.member.user.id, true)
                 .setThumbnail(message.author.avatarURL)
@@ -56,6 +61,12 @@ bot.on('message', message=>{
             break;
 
             case 'test':
-                message.channel.sendMessage('My Info test')
+
+                const Infotext = new Discord.RichEmbed()
+                .setTitle('Infotext')
+                .setDescription('This is a test description');
+
+            break;
+
         }
 });
