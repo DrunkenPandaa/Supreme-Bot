@@ -43,11 +43,11 @@ bot.on('message', message=>{
             case 'myinfo':
 
                 const myinfo = new Discord.RichEmbed()
-                .setTitle('User Information')
+                .setTitle(message.member.user.tag, message.member, true)
                 .addField('Username + #', message.member.user.tag, true)
+                .addField('Mention', message.member, true)
                 .addField('Bot?', message.member.user.bot, true)
                 .addField('Created At', message.member.user.createdAt,true)
-                .addField('Mention', message.member, true)
                 .addField('Joined At', message.member.joinedAt, true)
                 .addField('Current Server', message.guild.name, true)
                 .addField('Discord Univeral ID', message.member.user.id, true)
