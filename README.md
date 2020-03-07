@@ -1,2 +1,0 @@
-# Supreme-Bot
-a bot
