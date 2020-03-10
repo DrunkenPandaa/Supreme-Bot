@@ -73,21 +73,21 @@ bot.on('message', message=>{
 
             break;
 
-            case 'tribe0001':
+            case 'tribe01':
 
-                const tribe0001= new Discord.RichEmbed()
+                const tribe01= new Discord.RichEmbed()
                 .setTitle('Short stats of: Tribe 0001')
                 .setColor(0xF1C40F)
                 .setAuthor('Tribe of: Supreme')
                 .setDescription('Stats are NOT up to date, short a short overview. May not be accurat.')
                 .setThumbnail('https://images-ext-2.discordapp.net/external/nqIQSbJGTxkf3cAR7FRLI4gBUry5XbEgPo1KWJoSYIw/%3Fsize%3D2048/https/cdn.discordapp.com/avatars/224104604546236417/db80160021b878780a7c70acbadfd1bd.png?width=678&height=678')
-                .addField('Wood: 65', '65', true)
-                .addField('Stone: 72', '72', true)
-                .addField('Oil: 84 l','84', true)
-                .addField('Iron: 11', '11', true)
+                .addField('Wood: 65', true)
+                .addField('Stone: 72', true)
+                .addField('Oil: 84 l', true)
+                .addField('Iron: 11', true)
                 .addBlankField()
                 .setFooter('ALTERNATE WORLD ROLEPLAY')
-                message.channel.sendEmbed(tribe0001);
+                message.channel.sendEmbed(tribe01);
 
             break;
 
