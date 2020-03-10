@@ -73,19 +73,19 @@ bot.on('message', message=>{
 
             break;
 
-            case 'tribe0001':
+            case 'tribe1':
 
-                const tribe0001= new Discord.RichEmbed()
+                const tribe1= new Discord.RichEmbed()
                 .setTitle('Short stats of: Tribe #0001')
                 .setColor(0xF1C40F)
                 .setAuthor('Tribe of: Supreme')
                 .setDescription('Stats are NOT up to date, short a short overview. May not be accurate')
                 .setThumbnail('https://images-ext-2.discordapp.net/external/nqIQSbJGTxkf3cAR7FRLI4gBUry5XbEgPo1KWJoSYIw/%3Fsize%3D2048/https/cdn.discordapp.com/avatars/224104604546236417/db80160021b878780a7c70acbadfd1bd.png?width=678&height=678')
-                .addField('Wood:', '64', true)
-                .addField('Stone:', '120' true)
+                .addField('Field 1', 'test1', true)
+                .addField('Field 2', true)
                 .addBlankField()
                 .setFooter('ROLEPLAY')
-                message.channel.sendEmbed(tribe0001);
+                message.channel.sendEmbed(tribe1);
 
             break;
 
