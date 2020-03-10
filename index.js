@@ -86,6 +86,8 @@ bot.on('message', message=>{
                 .addField('Iron', '3', true)
                 .addField('Oil', '4 L', true)
                 .addField('Other Stuff', 'X', true)
+                .addField('Other Stuff 2', 'X', true)
+                .addField('Other Stuff 3', 'X', true)
                 .addBlankField()
                 .setFooter('ROLEPLAY')
                 message.channel.sendEmbed(tribe1);
