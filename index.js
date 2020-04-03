@@ -82,8 +82,9 @@ bot.on('message', message=>{
                 .setDescription('Status: 03.04.2020 - 18:33')
                 .setThumbnail('https://images-ext-2.discordapp.net/external/nqIQSbJGTxkf3cAR7FRLI4gBUry5XbEgPo1KWJoSYIw/%3Fsize%3D2048/https/cdn.discordapp.com/avatars/224104604546236417/db80160021b878780a7c70acbadfd1bd.png?width=678&height=678')
                 .addField('myinfo', 'will return information about yourself', true)
-                .addField('Supreme')
-                .addBlankField()
+                .addField('Supreme','will return "SUPREME FOREVER"', true)
+                .addField('Info [X]', 'will return information about [X]', true)
+                .addField('clear [X]', 'will clear [X] messages', true)
                 .setFooter('CHATTERS DISTRICT')
                 message.channel.sendEmbed(help);
 
