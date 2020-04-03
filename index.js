@@ -73,24 +73,20 @@ bot.on('message', message=>{
 
             break;
 
-            case 'tribe1':
+            case 'help':
 
-                const tribe1= new Discord.RichEmbed()
-                .setTitle('Short stats of: Tribe #0001')
+                const help= new Discord.RichEmbed()
+                .setTitle('Help Information')
                 .setColor(0xF1C40F)
-                .setAuthor('Tribe of: Supreme')
-                .setDescription('Stats are NOT up to date, short a short overview. May not be accurate')
+                .setAuthor('Bot from Chatters District')
+                .setDescription('Status: 03.04.2020 - 18:33')
                 .setThumbnail('https://images-ext-2.discordapp.net/external/nqIQSbJGTxkf3cAR7FRLI4gBUry5XbEgPo1KWJoSYIw/%3Fsize%3D2048/https/cdn.discordapp.com/avatars/224104604546236417/db80160021b878780a7c70acbadfd1bd.png?width=678&height=678')
-                .addField('Wood', '1', true)
-                .addField('Stone', '2', true)
-                .addField('Iron', '3', true)
-                .addField('Oil', '4 L', true)
-                .addField('Other Stuff', 'X', true)
-                .addField('Other Stuff 2', 'X', true)
-                .addField('Other Stuff 3', 'X', true)
+                .addField('myinfo', true)
+                .setDescription('Will return user information about yourself')
+                .addField('Supreme')
                 .addBlankField()
-                .setFooter('ROLEPLAY')
-                message.channel.sendEmbed(tribe1);
+                .setFooter('CHATTERS DISTRICT')
+                message.channel.sendEmbed(help);
 
             break;
 
